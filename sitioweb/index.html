@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de SQL Injection</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .error { color: red; }
+    .resultado { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Simulador de Inyección SQL (finje tener una base de datos)</h2>
+
+  <form id="formularioSQL">
+    <label>Usuario:</label><br>
+    <input type="text" id="usuario" placeholder="admin"><br><br>
+
+    <label>Contraseña:</label><br>
+    <input type="text" id="contrasena" placeholder="1234"><br><br>
+
+    <button type="submit">Enviar</button>
+    <p class="error" id="mensajeError"></p>
+  </form>
+
+  <div class="resultado" id="resultadoSQL"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
